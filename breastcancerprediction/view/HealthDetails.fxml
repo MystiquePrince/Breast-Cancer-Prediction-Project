@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="breastcancerprediction.view.HealthDetailsController">
+   <children>
+      <Label prefHeight="59.0" prefWidth="704.0" style="-fx-background-color: #ffbd30;" text="Please Fill Your Health Details Below:">
+         <font>
+            <Font name="Garamond Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="pID" maxWidth="200.0" prefHeight="25.0" prefWidth="32.0" promptText="Enter Patient ID">
+         <VBox.margin>
+            <Insets left="20.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font>
+      </TextField>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Label text="Is there a history of breast cancer in your family?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="67.0" />
+            <ChoiceBox fx:id="historyChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="52.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Do you consume alcohol?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="221.0" />
+            <ChoiceBox fx:id="alcoholChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="52.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Have you been exposed to any kind of radiation before?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="20.0" />
+            <ChoiceBox fx:id="radiationChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="109.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Do any of your breasts have lumps?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="155.0" />
+            <ChoiceBox fx:id="lumpsChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="119.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Do you experience unusual nipple discharge?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="88.0" />
+            <ChoiceBox fx:id="dischargeChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="186.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Is any of your nipples inverted?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="183.0" />
+            <ChoiceBox fx:id="invertedChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="253.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Is there a colouring change around the breast area?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="colorChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="387.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Any breast or nipple pain?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="216.0" />
+            <ChoiceBox fx:id="painChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="454.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label text="Any presence of rash around the breast area?">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="90.0" />
+            <ChoiceBox fx:id="rashChoice" prefWidth="150.0" styleClass="cb" stylesheets="@Main.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="20.0" />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" onAction="#insertHealthDeatails" prefHeight="47.0" prefWidth="170.0" text="Submit">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Garamond" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="257.0" layoutY="34.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="170.0" text="Cancel">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Garamond" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

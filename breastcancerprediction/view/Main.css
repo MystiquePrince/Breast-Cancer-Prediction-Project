@@ -1,0 +1,14 @@
+.menu-bar{
+    -fx-background-color: #A52A2A;
+}
+.menu{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Garamond";
+    color: white;
+}
+.cb{
+    -fx-font-size: 17px;
+    -fx-font-family: "Garamond";
+}
